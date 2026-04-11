@@ -10,8 +10,8 @@ Implementación de un servidor proxy HTTP con caché desarrollado en Go, que per
  
 | Nombre | Carrera |
 |--------|---------|
-| José Araya Fernández | Ingeniería en Software |
-| Amy Morales Cruz | Ingeniería en Software |
+| José Araya Fernández | Ingeniería del Software |
+| Amy Morales Cruz | Ingeniería del Software |
  
 ## Profesor
  
@@ -27,7 +27,7 @@ Este proyecto implementa un **proxy HTTP con caché** que:
 - Recibe solicitudes HTTP de clientes mediante sockets TCP
 - Reenvía las solicitudes al servidor de origen
 - Almacena las respuestas en caché (en memoria o disco)
-- Atiende múltiples clientes de forma simultánea usando hilos (threads)
+- Atiende múltiples clientes de forma simultánea usando goroutines
 - Evalúa el rendimiento comparando tiempos de respuesta con y sin caché
  
 ---
