@@ -2,7 +2,7 @@
  
 Proyecto final del curso **Sistemas Operativos II** — Universidad Latina de Costa Rica.
  
-Implementación de un servidor proxy HTTP con caché desarrollado en Java, que permite reenviar solicitudes a servidores de origen y almacenar las respuestas localmente para optimizar el rendimiento.
+Implementación de un servidor proxy HTTP con caché desarrollado en Go, que permite reenviar solicitudes a servidores de origen y almacenar las respuestas localmente para optimizar el rendimiento.
  
 ---
  
