@@ -90,10 +90,12 @@ docker build -t proxy-http-cache .
 ### 2. Ejecutar el contenedor
 
 ```bash
-docker run -p 8080:8080 proxy-http-cache
+docker run --network host proxy-http-cache
 ```
 
-El proxy estará disponible en `localhost:8080` desde su máquina.
+> **Nota:** Se usa `--network host` para que el contenedor comparta la red del sistema y pueda comunicarse con servidores locales usando `localhost` directamente.
+
+El proxy estará disponible en `localhost:8080`.
 
 ---
 
@@ -113,7 +115,7 @@ En una terminal separada, levante un servidor local:
 python3 -m http.server 9090
 ```
 
-Luego, envie la misma solicitud dos veces para observar el comportamiento del caché:
+Luego, envíe la misma solicitud dos veces para observar el comportamiento del caché:
 
 ```bash
 # Primera vez: genera CACHE MISS (va al servidor de origen)
